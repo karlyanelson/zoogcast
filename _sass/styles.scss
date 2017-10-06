@@ -1,4 +1,4 @@
-$teal: #05a1b7;
+$teal: #03d7d9;
 $purple: #4e03e0;
 
 body {
@@ -22,10 +22,18 @@ a {
 button {
   background: $purple;
   color: white;
+  font-size: 16px;
+
+  &:hover,
+  &:focus {
+    background: $teal;
+  }
 
   a {
     text-decoration: none;
     color: white;
+    font-weight: normal;
+
   }
 }
 
@@ -43,17 +51,39 @@ header:after {
 
 
 .header-logo {
-  // display: inline-block;
-  // float: left;
-
   img {
-    height: 100px;
+    height: 150px;
   }
 }
 
 nav {
-  // display: inline-block;
-  // float: right;
+  ul {
+    margin: 0;
+    display: table;
+    width: 100%;
+  }
+
+  li {
+    display: table-cell;
+    vertical-align: middle;
+  }
+}
+
+.nav-list-left,
+.nav-list-right {
+  width: 50%;
+}
+
+.nav-list-left {
+  text-align: right;
+}
+
+.nav-list-mid {
+  width: 20px;
+}
+
+.nav-list-right {
+  text-align: left;
 }
 
 footer {
