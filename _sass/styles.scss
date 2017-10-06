@@ -1,5 +1,5 @@
 $teal: #03d7d9;
-$purple: #4e03e0;
+$purple: #c58ffb;
 
 body {
   text-align: center;
@@ -17,6 +17,14 @@ main {
 a {
   color: $teal;
   font-weight: bold;
+
+  &:hover {
+    opacity: .75;
+  }
+
+  &:visited {
+    color: $purple;;
+  }
 }
 
 button {
@@ -51,6 +59,10 @@ header:after {
 
 
 .header-logo {
+  text-indent: -99999px;
+  &:hover {
+    opacity: .75;
+  }
   img {
     height: 150px;
   }
