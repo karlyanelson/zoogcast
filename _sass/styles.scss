@@ -1,0 +1,65 @@
+$teal: #05a1b7;
+$purple: #4e03e0;
+
+body {
+  text-align: center;
+  background: black;
+  background-image: url(images/stars.gif);
+  color: white;
+  font-size: 24px;
+}
+
+main {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+a {
+  color: $teal;
+  font-weight: bold;
+}
+
+button {
+  background: $purple;
+  color: white;
+
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+header:after {
+  content: '';
+  display: table;
+  visibility: hidden;
+  clear: both;
+}
+
+
+.header-logo {
+  // display: inline-block;
+  // float: left;
+
+  img {
+    height: 100px;
+  }
+}
+
+nav {
+  // display: inline-block;
+  // float: right;
+}
+
+footer {
+  font-size: 16px;
+}
+
+.post-list-img {
+  height: 200px;
+}
