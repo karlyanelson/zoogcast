@@ -59,31 +59,15 @@ header:after {
 nav {
   ul {
     margin: 0;
-    display: table;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   li {
-    display: table-cell;
-    vertical-align: middle;
+    flex: 0 0 auto;
   }
-}
-
-.nav-list-left,
-.nav-list-right {
-  width: 50%;
-}
-
-.nav-list-left {
-  text-align: right;
-}
-
-.nav-list-mid {
-  width: 20px;
-}
-
-.nav-list-right {
-  text-align: left;
 }
 
 footer {
