@@ -12,6 +12,7 @@ body {
 main {
   max-width: 1000px;
   margin: 75px auto;
+  display: block;
 }
 
 a {
@@ -87,11 +88,13 @@ footer {
 }
 
 .post-list-img {
-  height: 200px;
+  max-height: 200px;
+  max-width: 100%;
 }
 
 .post-img {
   min-height: 300px;
+  max-width: 100%;
 }
 
 .comments {
