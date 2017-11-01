@@ -87,6 +87,19 @@ footer {
   font-size: 16px;
 }
 
+.post-list{
+  li {
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    border-bottom: 1px solid $purple;
+
+    &:last-child {
+      margin-bottom: 0;
+      border-bottom: none;
+    }
+  }
+}
+
 .post-list-img {
   max-height: 200px;
   max-width: 100%;
