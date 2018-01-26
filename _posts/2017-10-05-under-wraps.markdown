@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Episode 1: Under Wraps"
+title:  "Episode 1: Under Wraps (1997)"
 date:   2017-10-24
 categories: [DCOM]
 img: 001/under-wraps.gif
