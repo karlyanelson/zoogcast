@@ -15,7 +15,7 @@
 # in the templates via {{ site.myvariable }}.
 title: The ZoogCast
 email: contact@zoogcast.net
-description: > # A podcast about ZoogDisney and revisiting the media that helped raise us.
+description: A podcast where we revisit the media that helped raise us.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://zoogcast.net" # the base hostname & protocol for your site, e.g. http://example.com
 facebook: http://facebook.com/zoogcast/
@@ -30,11 +30,11 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
