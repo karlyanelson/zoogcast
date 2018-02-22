@@ -7,7 +7,7 @@
   <meta property="og:description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}" />
   <meta property="og:url" content="{{ site.url }}{% if page.permalink %}{{ page.permalink }} {% endif %}" />
   <meta property="og:type" content="website" />
-  <meta property="og:image" content="{{ site.url }}/assets/images/{{page.img}}" />
+  <meta property="og:image" content="{{ site.url }}/assets/images/{{ page.img }}" />
 
   <title>{% if page.title %}{{ page.title | escape }}{% else %}{{ site.title | escape }}{% endif %}</title>
   <meta name="description" content="{{ page.excerpt | default: site.description | strip_html | normalize_whitespace | truncate: 160 | escape }}">
