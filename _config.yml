@@ -17,7 +17,7 @@ title: The ZoogCast
 email: contact@zoogcast.net
 description: A podcast where we revisit the media that helped raise us.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://zoogcast.net" # the base hostname & protocol for your site, e.g. http://example.com
+url: "http://www.zoogcast.net" # the base hostname & protocol for your site, e.g. http://example.com
 facebook: http://facebook.com/zoogcast/
 twitter: https://twitter.com/ZoogCast
 disqus.shortname: zoogcast-net
