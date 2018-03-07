@@ -9,4 +9,4 @@ episodeID: 6285612
 ---
 Happy Valentine's month! For this *very special episode* we revisit the Rugrats.
 
-Join us for musings about boozy adult punch, jumping the shark and Karly’s trip to Antartica, and as a bonus just for our listeners hear some ASMR of us eating dinner.
+Join us for musings about boozy adult punch, jumping the shark and Karly’s trip to Antarctica, and as a bonus just for our listeners hear some ASMR of us eating dinner.
