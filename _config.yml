@@ -22,6 +22,9 @@ facebook: http://facebook.com/zoogcast/
 twitter: https://twitter.com/ZoogCast
 disqus.shortname: zoogcast-net
 
+# hide future posts
+future: false
+
 # Build settings
 markdown: kramdown
 plugins:
