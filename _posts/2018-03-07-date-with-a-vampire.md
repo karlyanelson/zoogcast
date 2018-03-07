@@ -7,4 +7,4 @@ img: 008/vampire-date.gif
 permalink: /date-with-a-vampire
 episodeID: 6332745
 ---
-This is why you shouldn't date people off Craigslist.
+Even though Valentine's Day has come and gone, we're still celebrating love (and Kayla's birthday) here on the ZoogCast. Snuggle up close as we talk about self-love, Spy Kids, Degrassi The Next Generation (it goes there!), and most importantly, mom's going on dates with vampires.
