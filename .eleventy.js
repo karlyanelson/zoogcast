@@ -23,6 +23,13 @@ module.exports = function (eleventyConfig) {
     return DateTime.fromJSDate(dateObj).toISO();
   });
 
+  // https://www.11ty.dev/docs/data-frontmatter-customize/#example-parse-excerpts-from-content
+  eleventyConfig.setFrontMatterParsingOptions({
+    excerpt: true,
+    excerpt_separator: "<!-- excerpt -->",
+    excerpt_alias: "post_excerpt",
+  });
+
   return {
     dir: {
       input: "src",

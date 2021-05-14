@@ -4,13 +4,13 @@
 <html lang="en">
     <head>
         <meta property="og:title" content="{% if title %}{{title}} - {% endif %}Zoogcast" />
-        <meta property="og:description" content="A podcast where we revisit the media that helped raise us." />
+        <meta property="og:description" content="{% if post_excerpt %}{{post_excerpt}}{% else %}A podcast where we revisit the media that helped raise us.{% endif %}"  />
         <meta property="og:url" content="https://zoogcast.netlify.app" />
         <meta property="og:type" content="website" />
         <meta property="og:image" content="https://zoogcast.netlify.app/images/{{ img }}" />
         <title>{% if title %}{{title}} - {% endif %}Zoogcast</title>        
         <meta charset="UTF-8">
-        <meta name="description" content="A podcast where we revisit the media that helped raise us.">
+        <meta name="description" content="{% if post_excerpt %}{{post_excerpt}}{% else %}A podcast where we revisit the media that helped raise us.{% endif %}">
         <meta name="keywords" content="Zoogcast, Disney, Channel, Original, Movies">
         <meta name="author" content="Kayla Koger, Karly Nelson">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">

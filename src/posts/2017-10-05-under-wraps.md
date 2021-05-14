@@ -10,3 +10,5 @@ episodeID: 5871890
 
 For the inaugural episode of the ZoogCast we watched the first official DCOM
 (Disney Channel Original Movie) Underwraps! Join us, won't you?
+
+<!-- excerpt -->

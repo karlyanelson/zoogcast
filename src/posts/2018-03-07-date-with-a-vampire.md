@@ -9,6 +9,6 @@ episodeID: 6332745
 ---
 
 Even though Valentine's Day has come and gone, we're still celebrating love (and
-Kayla's birthday) here on the ZoogCast. Snuggle up close as we talk about
+Kayla's birthday) here on the ZoogCast. <!-- excerpt --> Snuggle up close as we talk about
 self-love, Spy Kids, Degrassi The Next Generation (it goes there!), and most
 importantly, moms going on dates with vampires.

@@ -9,3 +9,5 @@ episodeID: 6107757
 ---
 
 Does this film really hold up to twice yearly viewings?
+
+<!-- excerpt -->

@@ -9,6 +9,6 @@ episodeID: 6077071
 ---
 
 Happy Ho Ho Holidays! For our first holiday episode we revisit The Ultimate
-Christmas Present. It did not hold up. :'[ Drop us a line at
+Christmas Present. It did not hold up. :'[ <!-- excerpt --> Drop us a line at
 contact@zoogcast.net or comment below to let us know how many hair clips you had
 in 2000.
