@@ -1,0 +1,22 @@
+---
+layout: layout_base.njk
+---
+<nav aria-label="Back to Home">
+	<a href="/">Home</a>
+</nav>
+
+<main>
+
+  <h1>{{title}}</h1>
+
+  {{ content | safe }}
+
+</main>
+
+{% set previousPost = collections.post | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.post | getNextCollectionItem(page) %}
+
+<nav aria-label="Next and Previous Posts" class="footer footer-post"> 
+	{% if previousPost %}<div class="footer-post-prev"><a  href={{ previousPost.url }}>← Previous Episode</a></div>{% endif %}
+	{% if nextPost %}<div class="footer-post-next"><a href={{ nextPost.url }}>Next Episode →</a></div>{% endif %}
+</nav>
