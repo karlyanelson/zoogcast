@@ -10,6 +10,8 @@ module.exports = function (eleventyConfig) {
     return now;
   });
 
+  eleventyConfig.addPassthroughCopy({ "./src/assets/": "./" });
+
   return {
     dir: {
       input: "src",
