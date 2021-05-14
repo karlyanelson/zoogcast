@@ -20,6 +20,14 @@ main {
   display: block;
 }
 
+img {
+  @apply w-full h-auto;
+}
+
+.title-1 {
+  @apply text-5xl;
+}
+
 h3 {
   margin-top: 3rem;
   margin-bottom: 1rem;
@@ -33,8 +41,7 @@ h4 {
 }
 
 a {
-  @apply text-zoog-teal;
-  font-weight: bold;
+  @apply text-zoog-teal underline font-bold;
 }
 
 a:hover {
@@ -76,6 +83,7 @@ header:after {
 .header-logo:hover {
   opacity: 0.75;
 }
+
 .header-logo img {
   height: 150px;
 }
@@ -106,16 +114,6 @@ footer {
 .post-list li:last-child {
   margin-bottom: 0;
   border-bottom: none;
-}
-
-.post-list-img {
-  max-height: 12.5rem;
-  max-width: 100%;
-}
-
-.post-img {
-  min-height: 10rem;
-  max-width: 100%;
 }
 
 .post-meta {

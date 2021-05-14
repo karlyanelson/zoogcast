@@ -3,6 +3,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <meta property="og:title" content="{% if title %}{{title}}, {% endif %}Zoogcast" />
+        <meta property="og:description" content="Zoogcast" />
+        <meta property="og:url" content="https://zoogcast.netlify.app" />
+        <meta property="og:type" content="website" />
+        <meta property="og:image" content="https://zoogcast.netlify.app/images/{{ img }}" />
         <title>{% if title %}{{title}}, {% endif %}Zoogcast</title>        
         <meta charset="UTF-8">
         <meta name="description" content="Zoogcast">
@@ -12,8 +17,35 @@
         <link rel="stylesheet" href="/style.css?v={% version %}"/>
     </head>
     <body>
-        <main class="max-w-2xl mx-auto">
+        <header>
+            <nav>
+                <ul>
+                    <li class="nav-list-left">
+                        <a class="page-link" href="/about">About</a>
+                    </li>
+                    <li class="nav-list-mid">
+                        <a class="header-logo" href="/">
+                            <img src="/images/zoogcast-logo.png" alt="Zoogcast home.">
+                        </a>
+                    </li>
+                    <li class="nav-list-right">
+                        <a class="page-link" href="/contact">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+
+        <hr>
+
+        <main class="max-w-2xl mx-auto px-4">
         {{ content | safe }}
         </main>
+
+        <hr>
+
+        <footer class="py-6 px-4">
+            <p class="rss-subscribe"></p>
+            <p>Subscribe <a href="http://zoogcast.libsyn.com/rss" target="_blank">via RSS</a>, contact us at <a href="mailto:email">email</a> and follow us on <a href="facebook" target="_blank">Facebook</a> and <a href="twitter" target="_blank">Twitter</a></p>
+        </footer>
     </body>
 </html>

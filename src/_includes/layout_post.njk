@@ -1,28 +1,23 @@
 ---
 layout: layout_base.njk
 ---
-<nav aria-label="Back to Home">
-	<a href="/">Home</a>
-</nav>
-
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
 	<img src="/images/{{img}} " alt="" class="post-img" />
 
   <header class="post-header">
-    <h1 class="post-title" itemprop="name headline">{{ title | escape }}</h1>
-    <p class="post-meta">
-      {# <time datetime="{{ date | date_to_xmlschema }}" itemprop="datePublished">
-        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
-        {{ date | date: date_format }}
-      </time> #}
+    <h1 class="title-1 mt-10 mb-6" itemprop="name headline">{{ title | escape }}</h1>
+    <p class="text-center font-italic text-sm">
+      <time datetime="{{ date }}" itemprop="datePublished">
+        {{ date }}
+      </time>
       {% if author %}
         • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author }}</span></span>
       {% endif %}
     </p>
   </header>
 
-	<div class="post-content" itemprop="articleBody">
+	<div class="mb-12 mt-8" itemprop="articleBody">
     {{ content | safe }}
   </div>
 
@@ -35,7 +30,7 @@ layout: layout_base.njk
 {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.post | getNextCollectionItem(page) %}
 
-<nav aria-label="Next and Previous Posts"  class="post-navigation flex">
-	{% if previousPost %}<a class="post-navigation-prev"  href={{ previousPost.url }}>← Previous Episode</a>{% endif %}
-	{% if nextPost %}<a class="post-navigation-next" href={{ nextPost.url }}>Next Episode →</a>{% endif %}
+<nav aria-label="Next and Previous Posts" class="text-center space-x-4 mt-10">
+	{% if previousPost %}<a class="text-left"  href={{ previousPost.url }}>← Previous Episode</a>{% endif %}
+	{% if nextPost %}<a class="text-right" href={{ nextPost.url }}>Next Episode →</a>{% endif %}
 </nav>
