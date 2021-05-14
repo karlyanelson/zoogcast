@@ -1,5 +1,8 @@
 // docs: https://www.11ty.io/docs/config/
 
+// https://11ty.rocks/eleventyjs/dates/
+const { DateTime } = require("luxon");
+
 const now = String(Date.now());
 
 module.exports = function (eleventyConfig) {
@@ -11,6 +14,14 @@ module.exports = function (eleventyConfig) {
   });
 
   eleventyConfig.addPassthroughCopy({ "./src/assets/": "./" });
+
+  eleventyConfig.addFilter("postDate", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toLocaleString(DateTime.DATE_MED);
+  });
+
+  eleventyConfig.addFilter("postDateTimeStamp", (dateObj) => {
+    return DateTime.fromJSDate(dateObj).toISO();
+  });
 
   return {
     dir: {
