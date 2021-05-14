@@ -8,7 +8,10 @@ img: social-img.png
   <li class="border border-white">
     <img src="/images/{{post.data.img}} " alt="" class="post-list-img" />
     <a class="block text-3xl mt-8 px-4" href="{{ post.url }}">{{ post.data.title }}</a>
-    <p class="p-4">{{post.data.post_excerpt}}</p>
+    <time class="text-center italic text-base" datetime="{{ post.date | postDateTimeStamp }}" itemprop="datePublished">
+        {{ post.date | postDate }}
+      </time>
+    <p class="px-4 pb-6">{{post.data.post_excerpt}}</p>
   </li>
   {%- endfor -%}
 </ul>
