@@ -9,9 +9,11 @@
         <meta name="keywords" content="Disney Channel Original Movies">
         <meta name="author" content="Karly Nelson">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="style.css?v={% version %}"/>
+        <link rel="stylesheet" href="/style.css?v={% version %}"/>
     </head>
-    <body class="max-w-2xl mx-auto">
+    <body>
+        <main class="max-w-2xl mx-auto">
         {{ content | safe }}
+        </main>
     </body>
 </html>

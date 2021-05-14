@@ -5,18 +5,37 @@ layout: layout_base.njk
 	<a href="/">Home</a>
 </nav>
 
-<main>
+<article class="post" itemscope itemtype="http://schema.org/BlogPosting">
 
-  <h1>{{title}}</h1>
+	<img src="/images/{{img}} " alt="" class="post-img" />
 
-  {{ content | safe }}
+  <header class="post-header">
+    <h1 class="post-title" itemprop="name headline">{{ title | escape }}</h1>
+    <p class="post-meta">
+      {# <time datetime="{{ date | date_to_xmlschema }}" itemprop="datePublished">
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y" %}
+        {{ date | date: date_format }}
+      </time> #}
+      {% if author %}
+        • <span itemprop="author" itemscope itemtype="http://schema.org/Person"><span itemprop="name">{{ author }}</span></span>
+      {% endif %}
+    </p>
+  </header>
 
-</main>
+	<div class="post-content" itemprop="articleBody">
+    {{ content | safe }}
+  </div>
+
+	{% if episodeID %}
+		<iframe style="border: none" src="//html5-player.libsyn.com/embed/episode/id/{{ episodeID }}/height/90/theme/custom/autoplay/no/autonext/no/thumbnail/yes/preload/no/no_addthis/no/direction/backward/render-playlist/no/custom-color/5d3aa9/" height="90" width="100%" scrolling="no"  allowfullscreen webkitallowfullscreen mozallowfullscreen oallowfullscreen msallowfullscreen></iframe>
+	{% endif %}
+
+</article>
 
 {% set previousPost = collections.post | getPreviousCollectionItem(page) %}
 {% set nextPost = collections.post | getNextCollectionItem(page) %}
 
-<nav aria-label="Next and Previous Posts" class="footer footer-post"> 
-	{% if previousPost %}<div class="footer-post-prev"><a  href={{ previousPost.url }}>← Previous Episode</a></div>{% endif %}
-	{% if nextPost %}<div class="footer-post-next"><a href={{ nextPost.url }}>Next Episode →</a></div>{% endif %}
+<nav aria-label="Next and Previous Posts"  class="post-navigation flex">
+	{% if previousPost %}<a class="post-navigation-prev"  href={{ previousPost.url }}>← Previous Episode</a>{% endif %}
+	{% if nextPost %}<a class="post-navigation-next" href={{ nextPost.url }}>Next Episode →</a>{% endif %}
 </nav>

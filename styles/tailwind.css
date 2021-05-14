@@ -1,3 +1,144 @@
 @import "tailwindcss/base";
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
+
+html {
+  font-size: 100%;
+}
+
+body {
+  text-align: center;
+  background: black;
+  background-image: url(/images/stars.gif);
+  color: white;
+  font-size: 1.5rem;
+}
+
+main {
+  max-width: 60rem;
+  margin: 5rem auto;
+  display: block;
+}
+
+h3 {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-style: italic;
+  font-weight: normal;
+}
+
+a {
+  @apply text-zoog-teal;
+  font-weight: bold;
+}
+
+a:hover {
+  opacity: 0.75;
+}
+
+a:visited {
+  @apply text-zoog-purple;
+}
+
+button {
+  @apply bg-zoog-purple;
+  color: white;
+  font-size: 1rem;
+}
+
+button:hover,
+button:focus {
+  @apply bg-zoog-teal;
+}
+
+button a {
+  text-decoration: none;
+  color: white;
+  font-weight: normal;
+}
+
+header:after {
+  content: "";
+  display: table;
+  visibility: hidden;
+  clear: both;
+}
+
+.header-logo {
+  text-indent: -99999px;
+}
+
+.header-logo:hover {
+  opacity: 0.75;
+}
+.header-logo img {
+  height: 150px;
+}
+
+nav ul {
+  margin: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav li {
+  flex: 0 0 auto;
+}
+
+footer {
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+.post-list li {
+  padding-bottom: 4rem;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid $purple;
+}
+
+.post-list li:last-child {
+  margin-bottom: 0;
+  border-bottom: none;
+}
+
+.post-list-img {
+  max-height: 12.5rem;
+  max-width: 100%;
+}
+
+.post-img {
+  min-height: 10rem;
+  max-width: 100%;
+}
+
+.post-meta {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.comments {
+  margin-top: 6rem;
+}
+
+.about-img {
+  max-width: 100%;
+}
+
+.post-navigation {
+  margin-top: 5rem;
+  font-size: 1rem;
+}
+
+.post-navigation-prev {
+  text-align: left;
+}
+.post-navigation-next {
+  text-align: right;
+}
